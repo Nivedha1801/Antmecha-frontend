@@ -1,42 +1,20 @@
-.logo {
-  height: 32px;
-  background: white;
-  margin: 16px;
-  color: #5B7AD8;
-  font-family: "Montserrat", sans-serif;
-}
-
-.layout {
-  min-height: 100vh;
-}
-
-nz-sider {
-  overflow: auto;
-  height: 100%;
-  position: fixed;
-  left: 0;
-}
-
 .right-layout {
-  margin-left: 200px;
-}
-
-nz-header {
-  background: #fff;
-  padding: 0;
+    margin-left: 200px;
 }
 
 nz-content {
-  margin: 24px 16px 0;
-  overflow: initial;
+    @apply mx-5;
 }
 
-.inner-content {
-  padding: 0px;
-  background: #fff;
-  text-align: center;
+nz-header {
+    background: #edf2f4;
+    padding: 0;
 }
 
-nz-footer {
-  text-align: center;
+.ant-divider-horizontal {
+    margin: 5px 0px !important;
+}
+
+::ng-deep .ant-table-pagination.ant-pagination {
+    margin: 2px !important;
 }

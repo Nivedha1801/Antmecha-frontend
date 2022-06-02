@@ -1,6 +1,5 @@
 <!-- BOOTSTRAP IMPORT -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 <!-- GOOGLE FONTS IMPORT -->
@@ -8,104 +7,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
 
-<!-- <nz-layout class="left-layout">
-    <nz-sider nzTheme="dark" nzCollapsible [(nzCollapsed)]="isCollapsed" nzWidth="200px">
-        <div class="logo">
-            <span *ngIf="isCollapsed" style="margin-left: 10px;font-size:larger">J M</span>
-            <span *ngIf="!isCollapsed" style="margin-left: 20px;font-size:larger">JIRAMETRIX</span>
-        </div>
-        <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-            <li nz-submenu nzTitle="Projects" nzIcon="build">
-                <ul>
-                    <li nz-menu-item>Tom</li>
-                    <li nz-menu-item>Bill</li>
-                    <li nz-menu-item>Alex</li>
-                    <li nz-menu-item>James</li>
-                    <li nz-menu-item>Alex</li>
-                    <li nz-menu-item>Catherine</li>
-                </ul>
-            </li>
-            <li nz-submenu nzTitle="Sprints" nzIcon="sliders">
-                <ul>
-                    <li nz-menu-item>Team 1</li>
-                    <li nz-menu-item>Team 2</li>
-                    <li nz-menu-item>Team 3</li>
-                    <li nz-menu-item>Team 4</li>
-                    <li nz-menu-item>Team 5</li>
-                    <li nz-menu-item>Team 6</li>
-                </ul>
-            </li>
-            <li nz-menu-item>
-                <i nz-icon nzType="dashboard"></i>
-                <span>Boards</span>
-            </li>
-        </ul>
-    </nz-sider>
-    <nz-layout class="right-layout">
-        <nz-header>
-            <div class="d-flex flex-row-reverse">
-                <div class="mr-3" style="color: #1890FF;font-size: 15px;cursor: pointer;">Siddhesh Thipse</div>
-                <div class=" mr-3"><nz-divider nzType="vertical"></nz-divider></div>
-                <div class="mr-3"><i nz-icon nzType="setting" nzTheme="outline" style="font-size: 18px;cursor: pointer;"></i></div>
-                <div class="ml-3 mr-3"><nz-divider nzType="vertical"></nz-divider></div>
-                <div><i nz-icon nzType="bell" nzTheme="outline" style="font-size: 18px;cursor: pointer;"></i></div>
-            </div>
-        </nz-header>
-        <nz-content>
-            <nz-breadcrumb>
-                <nz-breadcrumb-item>Home</nz-breadcrumb-item>
-                <nz-breadcrumb-item>Dashboard</nz-breadcrumb-item>
-            </nz-breadcrumb>
-            <div class="inner-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <app-donut-chart></app-donut-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <app-bar-graph></app-bar-graph>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <app-donut-chart></app-donut-chart>
-                    </div>
-                    <div class="col-md-6">
-                        <app-bar-graph></app-bar-graph>
-                    </div>
-                </div>
-            </div>
-        </nz-content>
-    </nz-layout>
-</nz-layout> -->
-
 <nz-layout class="layout">
-    <nz-sider nzTheme="light" class="shadow">
-        <div class="logo">
-            <span *ngIf="isCollapsed" style="margin-left: 10px; font-size: larger">J M</span>
-            <span *ngIf="!isCollapsed" style="margin-left: 20px; font-size: larger">JIRAMETRIX</span>
-        </div>
-        <ul nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-            <li nz-menu-item>
-                <i nz-icon nzType="dashboard"></i>
-                <span>General</span>
-            </li>
-            <li nz-submenu nzTitle="Sprints" nzIcon="build">
-                <ul>
-                    <li nz-menu-item>Sprint 1</li>
-                    <li nz-menu-item>Sprint 2</li>
-                    <li nz-menu-item>Sprint 3</li>
-                    <li nz-menu-item>Sprint 4</li>
-                </ul>
-            </li>
-        </ul>
-    </nz-sider>
-    <nz-layout class="right-layout">
+    <nz-layout>
         <nz-header>
             <div class="d-flex flex-row-reverse">
-                <div class="mr-3" style="color: #5b7ad8; font-size: 15px; cursor: pointer" (click)="jiraModalOpen()">
-                    Siddhesh Thipse
+                <div class="mr-3" style="color: black; font-size: 15px; cursor: pointer">
+                    Nivedha V
                 </div>
-                <div class="mr-3">
+                <!-- <div class="mr-3">
                     <nz-divider nzType="vertical"></nz-divider>
                 </div>
                 <div class="mr-3">
@@ -116,92 +25,259 @@
                 </div>
                 <div>
                     <i nz-icon nzType="bell" nzTheme="outline" style="font-size: 18px; cursor: pointer"></i>
-                </div>
+                </div> -->
             </div>
         </nz-header>
-        <nz-content>
-            <nz-breadcrumb class="mb-2">
-                <nz-breadcrumb-item>Home</nz-breadcrumb-item>
-                <nz-breadcrumb-item>Dashboard</nz-breadcrumb-item>
-            </nz-breadcrumb>
-            <div class="inner-content" style="background-color: #f0f2f5">
-                <div class="row mb-2">
-                    <div class="col-sm-3">
-                        <div class="card shadow" style="border-bottom: 4px solid #5b7ad8; border-radius: 8px">
-                            <div class="card-body">
-                                <nz-statistic [nzValue]="567" [nzTitle]="'New Accounts'"></nz-statistic>
+        <nz-content *ngIf="contentDerived" [ngStyle]="{ display: contentDerived ? 'block' : 'none' }">
+            <div class="grid grid-cols-4 p-2 gap-3">
+                <div class="card flex flex-col">
+                    <p class="heading">Project Launch Date & Progress</p>
+                    <div class="flex mx-3 items-center justify-between">
+                        <div class="text-center">
+                            <p style="font-size: 16px" class="text-secondary">
+                                {{ projectCard[0].due_date | date: "mediumDate" }}
+                            </p>
+                            <div class="flex text-center mx-auto">
+                                <i style="font-size: 26px" class="fa fa-flag mx-auto pr-4"></i>
+                                <h2 class="text-xl font-medium mx-auto">
+                                    {{ projectCard[0].remaining_days }}
+                                </h2>
                             </div>
                         </div>
+                        <nz-progress [nzPercent]="75" [nzWidth]="80" nzType="circle"></nz-progress>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card shadow" style="border-bottom: 4px solid #5b7ad8; border-radius: 8px">
-                            <div class="card-body">
-                                <nz-statistic [nzValue]="45" [nzTitle]="'Total Expenses'"></nz-statistic>
+                </div>
+
+                <div class="card">
+                    <p class="heading">Customers Actual Vs Target</p>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col items-center">
+                            <div class="font-bold mb-2 h-20 w-20 p-2 text-white rounded-full flex items-center justify-center text-xl">
+                                <nz-progress [nzPercent]="60" [nzStrokeColor]="'#ec7d10'" nzType="circle" [nzWidth]="80"></nz-progress>
                             </div>
+                            Target Achievement
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card shadow" style="border-bottom: 4px solid #5b7ad8; border-radius: 8px">
-                            <div class="card-body">
-                                <nz-statistic [nzValue]="50" [nzTitle]="'Company Value'"></nz-statistic>
+                        <div class="flex flex-col mx-auto">
+                            <div class="flex">
+                                <p class="font-bold text-lg">88</p>
+                                <p class="">&nbsp;-&nbsp; Actual</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card shadow" style="border-bottom: 4px solid #5b7ad8; border-radius: 8px">
-                            <div class="card-body">
-                                <nz-statistic [nzValue]="540" [nzTitle]="'New Expenses'"></nz-statistic>
+                            <div class="flex">
+                                <p class="font-bold text-lg">100</p>
+                                <p class="">&nbsp;-&nbsp;Target</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <div class="card shadow">
-                            <nz-divider nzText="Traffic Sources" nzOrientation="left"></nz-divider>
-                            <div class="card-body">
-                                <app-donut-chart></app-donut-chart>
+                <div class="card">
+                    <p class="heading">CAC Actual Vs Target</p>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col items-center">
+                            <div class="font-bold mb-2 h-20 w-20 p-2 text-white rounded-full flex items-center justify-center text-xl">
+                                <nz-progress [nzPercent]="97" [nzStrokeColor]="'#e71d36'" nzType="circle" [nzWidth]="80"></nz-progress>
                             </div>
+                            Target Achievement
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card shadow">
-                            <nz-divider nzText="Income" nzOrientation="left"></nz-divider>
-                            <div class="card-body">
-                                <app-bar-graph></app-bar-graph>
+                        <div class="flex flex-col mx-auto">
+                            <div class="flex">
+                                <p class="font-bold text-lg">2.144$</p>
+                                <p class="">&nbsp;-&nbsp; Actual</p>
+                            </div>
+                            <div class="flex">
+                                <p class="font-bold text-lg">2.200$</p>
+                                <p class="">&nbsp;-&nbsp;Target</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12"></div>
+                <div class="card">
+                    <p class="heading">Project Budget</p>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col items-center">
+                            <div class="font-bold mb-2 h-20 w-20 p-2 text-white rounded-full flex items-center justify-center text-xl">
+                                <nz-progress [nzPercent]="8.1" [nzStrokeColor]="'#f5cb5c'" nzType="circle" [nzWidth]="80"></nz-progress>
+                            </div>
+                            <div>Remaining Over target</div>
+                        </div>
+                        <div class="lflex flex-col mx-auto">
+                            <div class="flex">
+                                <p class="font-bold text-lg">52000$</p>
+                                <p class="">&nbsp;-&nbsp;Total</p>
+                            </div>
+                            <div class="flex">
+                                <p class="font-bold text-lg">8770$</p>
+                                <p class="">&nbsp;-&nbsp;Remaining</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nz-content>
-    </nz-layout>
+            <div class="grid grid-cols-3 p-2 gap-3">
+                <div class="card">
+                    <div>
+                        <div class="flex">
+                            <button nz-tooltip [nzTooltipTitle]="t_chartVisible ? 'Table View' : 'Chart View'" nz-button nzType="primary" (click)="t_chartVisible = !t_chartVisible" nzShape="circle">
+                <i
+                  [ngStyle]="{ display: t_chartVisible ? 'block' : 'none' }"
+                  class="fa fa-table"
+                ></i>
+                <i
+                  [ngStyle]="{ display: t_chartVisible ? 'none' : 'block' }"
+                  nz-icon
+                  nzType="bar-chart"
+                  nzTheme="outline"
+                ></i>
+              </button>
+                            <p class="heading mx-auto">Task Insights</p>
+                        </div>
+                        <div [ngStyle]="{ display: t_chartVisible ? 'block' : 'none' }">
+                            <app-table [data]="overDueCard"></app-table>
+                        </div>
+                        <div class="overflow-hidden" [ngStyle]="{ display: t_chartVisible ? 'none' : 'block' }">
+                            <app-donut-chart [chartOption]="taskChart"></app-donut-chart>
+                        </div>
+                        <!-- <app-bar-graph></app-bar-graph> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="flex">
+                            <button nz-tooltip [nzTooltipTitle]="u_chartVisible ? 'Table View' : 'Chart View'" nz-button nzType="primary" (click)="u_chartVisible = !u_chartVisible" nzShape="circle">
+                <i
+                  [ngStyle]="{ display: u_chartVisible ? 'block' : 'none' }"
+                  class="fa fa-table"
+                ></i>
+                <i
+                  [ngStyle]="{ display: u_chartVisible ? 'none' : 'block' }"
+                  nz-icon
+                  nzType="bar-chart"
+                  nzTheme="outline"
+                ></i>
+              </button>
+                            <p class="heading mx-auto">Upcoming Deadlines</p>
+                        </div>
+                        <div [ngStyle]="{ display: u_chartVisible ? 'block' : 'none' }">
+                            <app-table [type]="'upcoming'" [data]="upcomingCard"></app-table>
+                        </div>
+                        <div class="overflow-hidden" [ngStyle]="{ display: u_chartVisible ? 'none' : 'block' }">
+                            <app-donut-chart [chartOption]="upcomingChart"></app-donut-chart>
+                        </div>
+                        <!-- <app-bar-graph></app-bar-graph> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex">
+                        <button nz-tooltip [nzTooltipTitle]="chartVisible ? 'Table View' : 'Chart View'" nz-button nzType="primary" (click)="chartVisible = !chartVisible" nzShape="circle">
+              <i
+                [ngStyle]="{ display: chartVisible ? 'block' : 'none' }"
+                class="fa fa-table"
+              ></i>
+              <i
+                [ngStyle]="{ display: chartVisible ? 'none' : 'block' }"
+                nz-icon
+                nzType="bar-chart"
+                nzTheme="outline"
+              ></i>
+            </button>
+                        <p class="heading mx-auto">Ticket Insights</p>
+                    </div>
+                    <div>
+                        <div [ngStyle]="{ display: chartVisible ? 'block' : 'none' }">
+                            <app-bar-graph [chartOption]="ticketChart"></app-bar-graph>
+                        </div>
+                        <div [ngStyle]="{ display: chartVisible ? 'none' : 'block' }">
+                            <div class="grid grid-cols-2 items-center">
+                                <div class="text-center">
+                                    Restore Success Rate<br />
+                                    <span class="text-secondary text-sm">vs last month</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="pt-2 font-bold text-lg text-secondary">97.9%</span
+                  >
+                </div>
+              </div>
+              <nz-divider></nz-divider>
+              <div class="grid grid-cols-2">
+                <div class="text-center">
+                  Reopened Tickets <br />
+                  <span class="text-secondary text-sm">vs last month</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="pt-2 font-bold text-lg text-secondary">68</span>
+                                </div>
+                            </div>
+                            <nz-divider></nz-divider>
+                            <div class="grid grid-cols-2">
+                                <div class="text-center">
+                                    Reopened Tickets %<br />
+                                    <span class="text-secondary text-sm">vs last month</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="pt-2 font-bold text-lg text-secondary">3.2%</span
+                  >
+                </div>
+              </div>
+              <nz-divider></nz-divider>
+              <div class="grid grid-cols-2">
+                <div class="text-center">
+                  Critical Bugs<br />
+                  <span class="text-secondary text-sm">vs last month</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="pt-2 font-bold text-lg text-secondary">36</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 p-2 gap-3">
+                <div class="card">
+                    <p class="heading mx-auto">Product Status</p>
+                    <div>
+                        <div class="grid grid-cols-2">
+                            <div class="text-center">
+                                Mean Time Between Failures<br />
+                                <span class="text-secondary text-sm">vs last month</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="pt-2 font-bold text-lg text-secondary">153.0 h</span
+                >
+              </div>
+            </div>
+            <nz-divider></nz-divider>
+            <div class="grid grid-cols-2">
+              <div class="text-center">
+                Mean Time to Repair <br />
+                <span class="text-secondary text-sm">vs last month</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="pt-2 font-bold text-lg text-secondary">19.6 min</span
+                >
+              </div>
+            </div>
+            <nz-divider></nz-divider>
+            <div class="grid grid-cols-2">
+              <div class="text-center">
+                Downtime due to Security<br />
+                <span class="text-secondary text-sm">vs last month</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="pt-2 font-bold text-lg text-secondary">39 sec</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p class="heading mx-auto">Workload</p>
+          <app-bar-graph [chartOption]="workloadChart"></app-bar-graph>
+        </div>
+        <div class="card">
+          <p class="heading mx-auto">OLE By Department</p>
+          <app-bar-graph [chartOption]="oleChart"></app-bar-graph>
+        </div>
+      </div>
+    </nz-content>
+  </nz-layout>
 </nz-layout>
-
-<nz-modal [(nzVisible)]="jiraCredentialModalVisible" nzTitle="Enter your credentials" (nzOnCancel)="jiraModalCancel()"
-    (nzOnOk)="onCredentialsSubmit()" [nzOkLoading]="connectionProgress">
-    <form *nzModalContent [formGroup]="jiraCredentialsForm">
-        <nz-form-item>
-            <nz-form-label [nzSm]="6" [nzXs]="24">Username</nz-form-label>
-            <nz-form-control [nzSm]="14" [nzXs]="24">
-                <input nz-input placeholder="Enter your Email ID" formControlName="jiraEmail" />
-            </nz-form-control>
-        </nz-form-item>
-        <nz-form-item>
-            <nz-form-label [nzSm]="6" [nzXs]="24">Jira API Token</nz-form-label>
-            <nz-form-control [nzSm]="14" [nzXs]="24">
-                <input nz-input placeholder="Enter Jira API Token" formControlName="jiraToken"
-                    (keydown.enter)="onCredentialsSubmit()" />
-            </nz-form-control>
-        </nz-form-item>
-    </form>
-    <div *nzModalFooter>
-        <button nz-button nzType="primary" [disabled]="!jiraCredentialsForm.valid" (click)="onCredentialsSubmit()"
-            [nzLoading]="connectionProgress">
-            Submit
-        </button>
-    </div>
-</nz-modal>

@@ -1,0 +1,27 @@
+.New {
+    background-color: #118ab2;
+    color: white;
+    @apply px-1 rounded-lg text-center;
+}
+
+.Active {
+    background-color: #ff9f1c;
+    color: white;
+    @apply px-1 rounded-lg text-center;
+}
+
+.urgent {
+    @apply text-red-400;
+}
+
+.high {
+    @apply text-yellow;
+}
+
+.normal {
+    @apply text-blue;
+}
+
+.low {
+    @apply text-secondary;
+}

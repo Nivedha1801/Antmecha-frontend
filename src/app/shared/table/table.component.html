@@ -1,0 +1,35 @@
+<nz-table [nzScroll]="{ x: '400px' }" [nzPageSize]="5" #basicTable [nzData]="data">
+    <thead>
+        <tr>
+            <th nzWidth="150px">Title</th>
+            <th nzWidth="150px">Due Date</th>
+            <th *ngIf="type != 'upcoming'" nzWidth="100px">Overdue</th>
+            <th nzWidth="100px">Owner</th>
+            <th nzWidth="100px">Status</th>
+            <th nzWidth="100px">Priority</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of basicTable.data">
+            <td style="
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 100px;
+        " nz-tooltip [nzTooltipTitle]="data.title">
+                {{ data.title }}
+            </td>
+            <td>{{ data.due_date | date: "mediumDate" }}</td>
+            <td *ngIf="type != 'upcoming'" class="text-danger">
+                {{ data.overdue_days }}
+            </td>
+            <td>{{ data.assignee }}</td>
+            <td>
+                <div class="{{ data.status }}">{{ data.status }}</div>
+            </td>
+            <td>
+                <div class="{{ data.priority }}">{{ data.priority }}</div>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

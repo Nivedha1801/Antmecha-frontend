@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { registerLocaleData } from '@angular/common';
@@ -35,7 +36,14 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
 );
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, LoginComponent, DonutChartComponent, BarGraphComponent, ProjectLaunchpadComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    LoginComponent,
+    DonutChartComponent,
+    BarGraphComponent,
+    ProjectLaunchpadComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -50,6 +58,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),
     }),
+    SharedModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
